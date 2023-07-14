@@ -8,7 +8,7 @@
 @inject IDataService DataService
 
 @{
-    var organizationName = "Remotely";
+    var organizationName = "XR Stager";
     var user = DataService.GetUserByNameWithOrg(User?.Identity?.Name);
 
     if (user is null)
@@ -31,7 +31,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=550, user-scalable=no" />
-    <title>@ViewData["Title"] - Remotely</title>
+    <title>@ViewData["Title"]</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="description" content="Remote access tools designed to get things done quickly." />
@@ -111,7 +111,7 @@
     </div>
     <footer class="footer border-top text-muted mt-4">
         <div class="container">
-            &copy; @DateTimeOffset.Now.Year - <a href="https://lucency.co">Immense Networks</a>
+            &copy; @DateTimeOffset.Now.Year - <a href="https://www.xrstager.com">XR Stager</a>
         </div>
     </footer>
     <script src="~/Identity/lib/jquery/dist/jquery.min.js"></script>
